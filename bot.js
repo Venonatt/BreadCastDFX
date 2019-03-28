@@ -37,7 +37,7 @@ const queue = new Map();
  
  
  
-var prefix = "!" 
+var prefix = "1" 
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
    
@@ -88,9 +88,7 @@ client.on('message', async msg => {
                     .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
  
-                    .setFooter("By JS Mehdi_..!#5041
-EMAIL
-")
+                    .setFooter("DFX Shop")
                     msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
                    
                     // eslint-disable-next-line max-depth
