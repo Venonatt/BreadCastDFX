@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "-"
+const prefix = "!"
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-   client.user.setActivity("-help-br ",{type: 'WATCHING'})
+   client.user.setActivity("!help-br ",{type: 'WATCHING'})
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -43,7 +43,7 @@ client.on('message', message => {
 				.addField(`**${prefix}bc3 | رسالة جماعية للوفلاين فقط**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**${prefix}bcrole | رسالة جماعية لرتبة معينه**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
                 .addField('=-=- [ شكرا على استعمال البوت ] -=-= ' ,'╚[❖═════════════════════❖]╝')
-                .setFooter(`By Abo khalil - Narox`)
+                .setFooter(`By Nedjmo`)
                 .setTimestamp()
 			
                 message.author.sendEmbed(embed)
