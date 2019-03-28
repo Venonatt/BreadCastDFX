@@ -3,7 +3,7 @@ const client = new Discord.Client();
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-   client.user.setActivity("اكتب اي شي",{type: 'WATCHING'})
+   client.user.setActivity("Botmusic 3",{type: 'WATCHING'})
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -37,7 +37,7 @@ const queue = new Map();
  
  
  
-var prefix = "!" 
+var prefix = "3" 
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
    
@@ -278,4 +278,4 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
  
  
  
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN3);
