@@ -277,4 +277,4 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
  
  
  
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN2);
