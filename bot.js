@@ -2,42 +2,44 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "!"
 
+console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
+console.log('         [Wait please .. ]       ')
+console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-   client.user.setActivity("!help-br ",{type: 'WATCHING'})
-  console.log('')
-  console.log('')
-  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
-  console.log(`[Start] ${new Date()}`);
-  console.log('╚[═════════════════════════════════════════════════════════════════]╝')
-  console.log('')
-  console.log('╔[════════════════════════════════════]╗');
-  console.log(`Logged in as * [ " ${client.user.username} " ]`);
-  console.log('')
-  console.log('Informations :')
-  console.log('')
+	console.log('')
+	console.log('')
+	console.log('')
+	console.log('')
+	console.log('')
+	console.log('')
+	console.log('')
+	console.log('')
+  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
+  console.log(`Logged in as [ ${client.user.tag}! ]`);
+  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
+  console.log('[           BOT IS ONLINE         ]')
+  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
+  console.log('[        info         ]')
+  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
   console.log(`servers! [ " ${client.guilds.size} " ]`);
+  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
   console.log(`Users! [ " ${client.users.size} " ]`);
+  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
   console.log(`channels! [ " ${client.channels.size} " ]`);
-  console.log('╚[════════════════════════════════════]╝')
-  console.log('')
-  console.log('╔[════════════]╗')
-  console.log(' Bot Is Online')
-  console.log('╚[════════════]╝')
-  console.log('')
-  console.log('')
+  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
+  client.user.setGame(`${prefix}help-br`)
 });
+
  
 client.on('message', message => {
     let messageArray = message.content.split(" ");
-    
     let command = messageArray[0];
     
     
     if (command === `${prefix}help-br`) {
 			let embed = new Discord.RichEmbed()
                 .setColor('RANDOM')
-                .addField('     **=-=-:: [ Narox ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
+                .addField('     **=-=-:: [ DFX SHOP ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
 				.addField(`**${prefix}bc1 | رسالة جماعية لجميع الاعضاء**'` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**${prefix}bc2 | رسالة جماعية للاونلاين فقط**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**${prefix}bc3 | رسالة جماعية للوفلاين فقط**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
